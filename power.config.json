@@ -1,0 +1,25 @@
+{
+  "appId": "f0630e13-9ec6-40a9-be30-c163780e4735",
+  "appDisplayName": "HR Resource Management",
+  "description": null,
+  "environmentId": "2e4ff4ce-5107-eaa2-b6dd-a2832dee7708",
+  "buildPath": "./dist",
+  "buildEntryPoint": "index.html",
+  "logoPath": "Default",
+  "localAppUrl": "http://localhost:3000/",
+  "region": "prod",
+  "connectionReferences": {
+    "617d27ca-8be7-4831-94d7-24764848f2f4": {
+      "id": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+      "displayName": "Microsoft Dataverse",
+      "dataSources": [
+        "commondataserviceforapps"
+      ],
+      "authenticationType": "Oauth",
+      "sharedConnectionId": null,
+      "dataSets": {}
+    }
+  },
+  "databaseReferences": {},
+  "version": "1.0"
+}
