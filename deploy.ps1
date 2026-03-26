@@ -49,7 +49,7 @@ if (-not (git show-ref --verify --quiet refs/heads/$branchName)) {
 Write-Host "[3/4] Pushing to GitHub..." -ForegroundColor Cyan
 git push -u $remoteName $branchName
 
-Write-Host "[4/4] Building and pushing to Power Platform..." -ForegroundColor Cyan
+Write-Host "[4/5] Building and pushing to Power Platform..." -ForegroundColor Cyan
 # Ensure dependencies are installed and the app builds before pushing
 npm install
 npm run build
@@ -62,3 +62,6 @@ if (Get-Command pac -ErrorAction SilentlyContinue) {
 }
 
 Write-Host "Deployment complete." -ForegroundColor Green
+
+Write-Host "[5/5] Starting dev server..." -ForegroundColor Cyan
+npm run dev
